@@ -1,9 +1,9 @@
 <script>
-	import './styles.css';
+	import "./styles.css";
 	import Header from "$lib/components/Header.svelte";
 	import { onMount } from "svelte"
 	import auth from "../authService.js"
-	import { isAuthenticated, user} from "../store"
+	import {isAuthenticated, user} from "../store"
 
 	let auth0Client
 
@@ -14,7 +14,7 @@
 	})
 
 	function login() {
-		auth.loginiWithPopup(auth0Client)
+		auth.loginWithPopup(auth0Client)
 	}
 
 	function logout() {
