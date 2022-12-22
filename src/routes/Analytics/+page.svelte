@@ -40,31 +40,4 @@
 		});
 	});
 
-    /*
-
-    onMount(async (promise) => {
-        new Chart(
-            document.getElementById('aquisitions'),{
-                type: 'bar',
-                data: {
-                    labels: data.map(row => row.year),
-                    datasets: [{
-                        label: 'Aquisitions by Year',
-                        data: data.map(row => row.count)
-                    }]
-                }
-            }
-        );
-    })();
-    */
 </script>
-
-
-
-<!--
-
-    <div style="width: 800px;">
-        <canvas id="aquisitions"></canvas>
-    </div>
--->
-

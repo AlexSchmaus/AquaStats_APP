@@ -56,15 +56,16 @@ table {
 	font-family: 'Lucida Sans', sans-serif;
 }
 
-h1 {
-	font-size: 32px;
-}
-
 nav {
 	background-color: steelblue;
+	padding-left: 1em;
 	padding-top: 1em;
 	padding-bottom: 1em;
 	margin-bottom: 20px;
+}
+
+nav > a {
+	padding-right: 2em;
 }
 
 footer {
@@ -73,5 +74,6 @@ footer {
 	margin-top: 20px;
 	padding-top: 5px;
 	padding-bottom: 5px;
+	padding-left: 1em;
 
 }

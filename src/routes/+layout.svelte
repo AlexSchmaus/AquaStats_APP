@@ -3,7 +3,7 @@
 	import Header from "$lib/components/Header.svelte";
 	import { onMount } from "svelte"
 	import auth from "../authService.js"
-	import {isAuthenticated, user} from "../store"
+	import {isAuthenticated, user, showAlert} from "../store"
 
 	let auth0Client
 
@@ -29,7 +29,9 @@
 
 <div class="app">
 	
+	{#if $showAlert}
 	<Header />
+	{/if}
 		
 	<nav>
 		<a href="/">Home</a>
@@ -42,9 +44,15 @@
 		{/if}
 	</nav>
 
-	<slot>
-	</slot>
+	<slot></slot>
 	
 	<footer>Footer Goes Here</footer>
 	
 </div>
+
+<style>
+	div.app {
+		display: flex;
+		flex-direction: column;
+	}
+</style>

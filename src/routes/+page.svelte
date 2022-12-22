@@ -1,7 +1,5 @@
-<script>
-</script>
+<script></script>
 
-<h1>Welcome to AquaStats!</h1>
 <div class="container">
     <div class="leftSide">
         <h2>Hello!</h2>
@@ -13,6 +11,7 @@
         </p>
     </div>
     <div class="mainContent">
+        <h1>Welcome to AquaStats!</h1>
         <p class="introText">
             Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. 
             Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, 
@@ -47,6 +46,10 @@
 
 
 <style>
+    h1 {
+        font-size: 32px;
+        margin-left: 1em;
+    }
     p.introText {
         margin: 2em;
     }
@@ -56,6 +59,8 @@
     .leftSide {
         flex-basis: 50px;
         flex-grow: 1;
+        margin-left: 1em;
+        margin-right: 1em;
     }
     .mainContent {
         flex-basis: 500px;
@@ -64,6 +69,9 @@
     .rightSide {
         flex-basis: 50px;
         flex-grow: 1;
+        margin-left: 1em;
+        margin-right: 1em;
     }
+
 
 </style>
